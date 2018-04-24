@@ -1,0 +1,13 @@
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  font-family: Arame;
+  font-size: 45px
+}
+img {
+  height: 500px;
+  width: 500px;
+}
