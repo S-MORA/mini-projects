@@ -1,0 +1,30 @@
+body {
+  font-family: Arame;
+}
+.navbar-header {
+  font-size: 50px;
+  color: white;
+}
+.horoscope {
+ font-size: 12px;
+}
+img{
+  cursor: pointer;
+}
+.title {
+  padding: 15px ;
+  font-size: 14px;
+}
+.title2 {
+  padding: 30px;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+.title3 {
+  font-size: 12px;
+}
+
+#compatiable {
+font-size: 22px;
+font-family: CircularStd-Black;
+}
