@@ -1,0 +1,61 @@
+body {
+  background-color: #303030;
+  padding: 0;
+  margin: 0;
+  font-family: OpenSans;
+}
+
+.title {
+  color: white;
+  font-family: OpenSans;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding: 20px;
+}
+
+.width {
+  width: auto;
+}
+.nav-color {
+  background-color: #EB5757;
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  margin: 5px 0;
+}
+
+.max-width {
+  max-width: 1000px
+}
+.img1 {
+  background-image: url("watermelon-snow.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 120px;
+  width: 230px;
+  border-radius: 5px 5px 0 0;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.text-background {
+  background-color: white;
+  height: 120px;
+  width: 230px;
+  padding: 0;
+  margin: 0 auto;
+  border-radius: 0 0 5px 5px;
+
+}
+.title2 {
+  padding: 10px 8px 1px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+.text {
+  font-size: 10px;
+  padding: 8px
+}
