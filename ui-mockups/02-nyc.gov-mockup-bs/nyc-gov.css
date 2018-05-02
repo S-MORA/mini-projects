@@ -1,0 +1,82 @@
+img {
+  width: 55%;
+  height: 55%;
+}
+body {
+  background-color: rgb(246, 246, 246);
+  font-family: OpenSans;
+  color: rgb(118, 114, 119)
+}
+ a {
+   color: black;
+ }
+
+ .max-width {
+   max-width: 1300px;
+ }
+.row-title {
+  font-size: 22px;
+  color: rgb(26, 89, 129);
+  font-weight: bold;
+}
+
+.border-left-blue {
+  border-left: 4px solid rgb(38, 122, 164)
+}
+.border-left-gray {
+  border-left: 4px solid rgb(214, 214, 214)
+}
+
+.row .border-left-gray {
+  font-size: 13px;
+}
+
+.tags {
+  font-size: 12px;
+  color: rgb(26, 89, 129);
+  font-weight: bold;
+}
+
+.tagged {
+  background-color: rgb(212, 212, 212);
+  font-size: 11px;
+  display: inline;
+  color: gray;
+}
+
+.dataset {
+  font-size: 14px;
+  color: gray;
+}
+
+.date {
+  font-size: 11px;
+}
+
+.show-all {
+  background-color: rgb(241, 241, 241);
+}
+
+.small-font{
+  font-size: 10px;
+}
+
+.md-font {
+  font-size: 12px;
+}
+
+.lg-font {
+  font-size: 14px;
+}
+
+.sort-box {
+  background-color: rgb(241, 241, 241)
+}
+
+hr {
+  width: 95%;
+  position: relative;
+  bottom: 20px;
+  padding: 0;
+  margin: 0;
+}
