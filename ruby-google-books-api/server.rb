@@ -11,11 +11,16 @@ post('/search_book') do
 end
 
 get ('/search') do
+  p params
    @search_title = params[:book_title]
+  if @search_title.empty?
+     erb(:search)
+  else
    books = GoogleBooks.search(@search_title)
    first_book = books.first
    @author = first_book.authors
    @isbn = first_book.isbn
    @image = first_book.image_link(:zoom => 2)
+ end
    erb(:search)
 end
