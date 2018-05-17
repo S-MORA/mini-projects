@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Search for Books!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container-fluid nav">
+      <a class="navbar-brand" href="/">
+        <img class="img-resize" src="/images/logo.png" alt="logo">
+      </a>
+      <div class="float-left">
+        <a class="navbar-brand abs" href="/">Home</a></div>
+      <div class="title text-center">
+        GoogleBooks API
+      </div>
+
+    </div>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+
+  </body>
+</html>

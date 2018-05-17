@@ -1,0 +1,28 @@
+<% if @search_title.blank? %>
+  <h2 class="text-center">
+    Here is a Result for
+    <span class="specific-text">
+      <%= @search_title.capitalize %>
+    </span>
+  </h2>
+  <h3 class="text=center">
+    Please Enter a Valid Search
+  </h3>
+
+<% else %>
+  <h2 class="text-center">
+    Here is a Result for
+    <span class="specific-text">
+      <%= @search_title.capitalize %>
+    </span>
+  </h2>
+  <div class="container text-center">
+    <h4>Author:
+      <%= @author %>
+    </h4>
+    <div>ISBN:
+      <%= @isbn %>
+    </div>
+    <img src="<%= @image %>">
+  </div>
+<% end %>
