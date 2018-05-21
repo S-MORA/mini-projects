@@ -1,5 +1,6 @@
 require 'sinatra'
 require './todo_class'
+require 'mailgun'
 
 current_todos = []
 num = 1
@@ -15,6 +16,15 @@ post ('/create-todo') do
   new_todo = Todo.new(todo_title, todo_des, num)
   current_todos.push(new_todo)
   num += 1
+  mg_client = Mailgun::Client.new (ENV["MAILGUN_API_KEY"])
+
+
+  message_params =  { from: 'sharonmorato1@gmail.com',
+                    to:   'inboxsharon@aol.com',
+                    subject: "Today's Todos: #{todo_title}",
+                    text:    todo_des
+                  }
+  mg_client.send_message ENV['MAILGUN_API_DOMAIN'], message_params
   redirect "/"
 end
 
