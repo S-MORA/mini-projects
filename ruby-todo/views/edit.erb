@@ -5,12 +5,11 @@
         Here you can edit what you need to do
       </h2>
 
-      <form action="/edit-post/<%=@num%>" method="post">
-        <input name="title" type="text" class="form-control" value="<%=@result.des%>"><Br>
-        <textarea name="descrip" type="text" class="form-control"><%=@result.type%>
+      <form action="/edit/post/<%=@num%>" method="POST">
+        <input name="title" type="text" class="form-control" value="<%=@result.type%>"><Br>
+        <textarea name="descrip" type="text" class="form-control"><%=@result.des%>
         </textarea>
         <input type="submit" class="m-3 btn btn-dark" value="Edit">
-        <input type="hidden" name="_method" value="PUT">
       </form>
     </div>
   </div>

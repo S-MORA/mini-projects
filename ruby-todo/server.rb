@@ -29,10 +29,11 @@ get ('/edit/:num') do
   erb(:edit)
 end
 
-post ('/edit-post/:num') do
+post ('/edit/post/:num') do
   @num = params[:num].to_i
-  current_todos[@num].type = params[:title]
-  current_todos[@num].des = params[:descrip]
-
+  @todos = current_todos
+  @result = @todos.detect{|instance| @num == instance.num}
+  @result.type = params[:title]
+  @result.des = params[:descrip]
   redirect '/'
 end

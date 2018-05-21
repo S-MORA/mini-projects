@@ -1,5 +1,5 @@
 class Todo
-	attr_reader :type, :des, :num
+	attr_accessor :type, :des, :num
 	def initialize(type, des, num)
 		@type = type
 		@des = des
