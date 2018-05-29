@@ -1,2 +1,2 @@
 require 'sinatra/activerecord/rake'
-require './populate_db_script'
+require './models'

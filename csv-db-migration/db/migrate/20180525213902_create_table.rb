@@ -5,14 +5,14 @@ class CreateTable < ActiveRecord::Migration[5.2]
       t.string :last_name
       t.string :email
       t.string :gender
-      t.integer :phone_number
+      t.string :phone_number
     end
     create_table :cars do |t|
       t.string :model
       t.string :make
-      t.integer :cost_price
-      t.integer :sale_markup
+      t.float :cost_price
+      t.float :sale_markup
     end
-    
   end
+
 end
