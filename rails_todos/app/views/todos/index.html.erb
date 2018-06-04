@@ -9,8 +9,14 @@
   Description: <%= todo.description  %>
 </div>
 <div>
+
+  <a href="<%=todo_path(todo)%>" data-disable-with=“Processing…”> View Details</a>
+
   <a href="<%=edit_todo_path(todo)%>"> Edit </a>
+
   <a href="<%=todo_path(todo)%>" data-method="DELETE"> Delete </a>
+
+
 </div>
 
 <% end %>
