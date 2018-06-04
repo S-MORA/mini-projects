@@ -5,7 +5,12 @@
 <div>
   Name <%= todo.name  %>
 </div>
-<div >
+<div>
   Description: <%= todo.description  %>
 </div>
+<div>
+  <a href="<%=edit_todo_path(todo)%>"> Edit </a>
+  <a href="<%=todo_path(todo)%>" data-method="DELETE"> Delete </a>
+</div>
+
 <% end %>
