@@ -1,0 +1,32 @@
+<%= form_for @muffin do |m| %>
+ <div>
+    <%= m.label :name %>
+    <%= m.text_field :name %>
+ </div>
+
+ <div>
+    <%= m.label :description %>
+    <%= m.text_field :description %>
+ </div>
+
+
+  <div>
+     <%= m.label :category %>
+     <%= m.text_field :category %>
+  </div>
+
+  <div>
+     <%= m.label :price %>
+     <%= m.number_field :price %>
+  </div>
+
+  <div>
+     <%= m.label :available_until %>
+     <%= m.date_field :available_until %>
+  </div>
+
+ <div>
+  <%= m.submit %>
+ </div>
+
+<% end %>
