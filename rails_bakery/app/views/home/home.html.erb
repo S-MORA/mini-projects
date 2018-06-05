@@ -1,0 +1,41 @@
+<h2>Welcome to the Bakery</h2>
+<h4>Here are our top cakes!</h4>
+<h5> <a href="<%=cakes_path%>"> See All Cakes </a>
+
+<% @cakes.last(3).each do |cake| %>
+<div>
+  Name <%= cake.name  %>
+</div>
+<div>
+  Description: <%= cake.description  %>
+</div>
+
+<div>
+  Diameter: <%= cake.diameter  %>
+</div>
+
+<div>
+  Price: <%= cake.price  %>
+</div>
+<% end %>
+<br>
+<br>
+<h4>Here are our top muffins</h4>
+<h5> <a href="<%=muffins_path%>"> See All Muffins</a>
+<% @muffins.last(3).each do |muffin| %>
+<div>
+  Name <%= muffin.name  %>
+</div>
+<div>
+  Description: <%= muffin.description  %>
+</div>
+
+<div>
+  Diameter: <%= muffin.category  %>
+</div>
+
+<div>
+  Price: <%= muffin.price  %>
+</div>
+
+<% end %>

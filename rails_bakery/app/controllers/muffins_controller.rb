@@ -23,7 +23,7 @@ class MuffinsController < ApplicationController
  def destroy
   Muffin.destroy(params[:id])
   redirect_to muffins_path
- end
+  end
 private
  def muffin_params
   params.require(:muffin).permit(:name, :description, :category, :price, :available_until)

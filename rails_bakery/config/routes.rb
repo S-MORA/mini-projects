@@ -3,4 +3,7 @@ Rails.application.routes.draw do
 
   resources :cakes
   resources :muffins
+
+  root to: 'home#home'
+
 end
