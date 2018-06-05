@@ -1,6 +1,8 @@
 <h2>Welcome to the muffin </h2>
 <h4> <a href="<%= new_muffin_path %>"> Create a Muffin  </a></h4>
 
+<h5><a href="/muffins?status=2">View Hidden</a></h5>
+
 <% @muffins.each do |muffin| %>
 <div>
   Name <%= muffin.name  %>
@@ -21,6 +23,8 @@
   Available Until: <%= muffin.available_until  %>
 </div>
 <div>
+
+  <a href="<%=toggle_muffin_status_path(muffin)%>" data-method="POST" data-disable-with=“Hiding..”> Hide</a>
 
   <a href="<%=muffin_path(muffin)%>" data-disable-with=“Processing…”> View Details</a>
 

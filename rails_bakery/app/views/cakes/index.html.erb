@@ -1,6 +1,10 @@
 <h2>Welcome to the Cakes Area! </h2>
 <h4> <a href="<%= new_cake_path %>"> Create a Cake  </a></h4>
 
+<h5><a href="/cakes?status=2">View Hidden</a></h5>
+
+
+
 <% @cakes.each do |cake| %>
 <div>
   Name <%= cake.name  %>
@@ -21,6 +25,8 @@
   Available Until: <%= cake.available_until  %>
 </div>
 <div>
+
+  <a href="<%=toggle_cake_status_path(cake)%>" data-method="POST" data-disable-with=“Hiding..”> Hide</a>
 
   <a href="<%=cake_path(cake)%>" data-disable-with=“Processing…”> View Details</a>
 
