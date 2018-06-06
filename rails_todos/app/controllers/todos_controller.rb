@@ -10,6 +10,7 @@ class TodosController < ApplicationController
   end
   def create
     Todo.create(todo_params) # creates within DB
+    flash[:success] = "Your todo has been created"
     redirect_to todos_path
   end
   def edit
