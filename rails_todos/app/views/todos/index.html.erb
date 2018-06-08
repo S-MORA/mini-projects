@@ -10,10 +10,20 @@
 <div>
   Description: <%= todo.description  %>
 </div>
+
 <div>
+Comments:
+<% todo.todo_comments.each do |comment|  %>
+    <%= comment.content %>
+    <% end %>
+</div>
+
+<div>
+
 
   <%= link_to 'View', todo_path(todo), 'data-disable-with': 'Processing...' %>
   <%= link_to 'Edit', edit_todo_path(todo) %>
+  <%= link_to 'Add Comment', new_todo_todo_comment_path(todo) %>
   <%= link_to 'Delete', todo_path(todo), method: "DELETE", data: { confirm: "Are you sure you want to delete this?" }  %>
 
 
